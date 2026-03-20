@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
+import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
   imports: [
-    MatDrawer
+    MatDrawer,
+    RouterLink,
+    MatSidenavModule
   ],
   templateUrl: './sidenav.html',
   styleUrl: './sidenav.scss',
