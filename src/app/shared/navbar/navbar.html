@@ -1,1 +1,9 @@
-<p>navbar works!</p>
+@if(isLogged){
+    <nav class="navbar navbar-expand mat-primary">
+        <div class="container-fluid d-flex justify-content-between">
+            <button  type="button" (click)="openSidenav()" matButton><mat-icon style="color: var(--mat-sys-on-primary);">menu</mat-icon></button>
+            <a class="navbar-brand" style="color: var(--mat-sys-on-primary);">Site SPA Angular</a>
+            <button id="loginButton" matButton style="color: var(--mat-sys-on-primary);" (click)="logoff()">Logoff</button>
+        </div>
+    </nav>
+}

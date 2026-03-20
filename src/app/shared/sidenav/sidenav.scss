@@ -1,0 +1,22 @@
+.sidenav-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidenav-buttons a, .sidenav-buttons button{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    height: 5rem;
+    border-radius: 4px;
+}
+.sidenav-buttons mat-icon, .sidenav-buttons button mat-icon{
+    width: 32px;
+    height: 32px;
+}

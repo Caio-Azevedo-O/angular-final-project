@@ -1,1 +1,39 @@
-<p>home works!</p>
+
+<div class="container-fluid d-flex justify-content-center align-items-center flex-column">
+
+    <h1>Welcome to the Home Page</h1>
+</div>
+<div class="d-flex justify-content-between align-items-center mt-5 p-3 mx-5">
+
+  <mat-card class="card p-3 w-100" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Products</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Check all products you created.</p>
+    </mat-card-content>
+    <mat-card-footer class="card-footer">
+      <mat-chip-set>
+        <mat-chip>Table</mat-chip>
+        <mat-chip>Actions</mat-chip>
+        <mat-chip><a routerLink="/products">Products</a></mat-chip>
+      </mat-chip-set>
+    </mat-card-footer>
+  </mat-card>
+  
+  <mat-card class="card p-3 w-100" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Create a new product</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Register a brand new product.</p>
+    </mat-card-content>
+    <mat-card-footer class="card-footer">
+      <mat-chip-set>
+        <mat-chip>Form</mat-chip>
+        <mat-chip>Insertion</mat-chip>
+        <mat-chip><a routerLink="/create-product">Create Product</a></mat-chip>
+      </mat-chip-set>
+    </mat-card-footer>
+  </mat-card>
+</div>
