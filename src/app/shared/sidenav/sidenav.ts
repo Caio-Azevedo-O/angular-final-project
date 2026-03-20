@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidenav',
-  imports: [],
+  imports: [
+    MatDrawer
+  ],
   templateUrl: './sidenav.html',
   styleUrl: './sidenav.scss',
 })
