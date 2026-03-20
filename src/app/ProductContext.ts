@@ -1,13 +1,15 @@
 export class ProductContext{
-    id: number;
+    Id?: number;
     name: string;
     value: number;
+    description!: string;
     code: string;
 
-    constructor(id: number, name: string, value: number, code: string) {
-        this.id = id;
+    constructor(name: string, value: number, description: string, code: string, id?: number,) {
+        this.Id = id;
         this.name = name;
         this.value = value;
+        this.description = description;
         this.code = code;
     }
 }

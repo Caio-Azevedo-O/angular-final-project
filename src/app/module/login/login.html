@@ -1,1 +1,12 @@
-<p>login works!</p>
+<form (submit)="false" class="border rounded w-50 login-form p-3 m-5 position-fixed">
+        <mat-form-field appearance="outline">
+            <mat-label>User</mat-label>
+            <input matInput  [(ngModel)]="user" name="user" placeholder="Enter your username/email">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)]="password" name="password" placeholder="Enter your password" type="password">
+        </mat-form-field>
+    <button type="button" mat-button color="secondary" (click)="login()">Logar</button>
+</form>

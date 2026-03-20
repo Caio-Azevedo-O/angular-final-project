@@ -1,3 +1,9 @@
-<p><a href="#">Home</a></p>
-<p><a href="#">Profile</a></p>
-<p><a href="#">Settings</a></p>
+<div class="sidenav-buttons d-flex justif-content-center mt-3 p-3">
+    @if(isLogged){
+        <h3>Escolha a pagina que deseja acessar</h3>
+        <button type="button" matButton (click)="drawer.close()"><mat-icon style="font-size: 35px">close</mat-icon>Close</button>
+        <a routerLink="/home" matButton style="color: var(--mat-sys-secondary)"><mat-icon style="color: var(--mat-sys-secondary); font-size: 35px;">home</mat-icon>Home</a>
+        <a routerLink="/products" matButton style="color: var(--mat-sys-secondary)"><mat-icon style="color: var(--mat-sys-secondary); font-size: 35px;">table_chart</mat-icon>Products</a>
+        <a routerLink="/create-product" matButton style="color: var(--mat-sys-secondary)"><mat-icon style="color: var(--mat-sys-secondary); font-size: 35px;">add</mat-icon>Create new Product</a>
+    }
+</div>

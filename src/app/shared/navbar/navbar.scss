@@ -3,3 +3,9 @@
 nav{
     background-color: var(--mat-sys-primary);
 }
+#loginButton{
+    background-color: var(--mat-sys-tertiary);
+    color: var(--mat-sys-on-primary);
+    width: 7.5rem;
+    border-radius: 10px;
+}

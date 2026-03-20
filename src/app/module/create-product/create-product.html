@@ -1,1 +1,23 @@
-<p>create-product works!</p>
+<form (submit)="false" class="border rounded w-50 product-form p-3 m-5 position-fixed">
+        <mat-form-field appearance="outline">
+            <mat-label>Product Name</mat-label>
+            <input matInput [(ngModel)]="productName" name="productName" placeholder="Enter product name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Product Value</mat-label>
+            <input matInput [(ngModel)]="productValue" name="productValue" placeholder="Enter product value" type="number">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Product Description</mat-label>
+            <input matInput [(ngModel)]="productDescription" name="productDescription" placeholder="Enter product description">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Product Code</mat-label>
+            <input matInput [(ngModel)]="productCode" name="productCode" placeholder="Enter product code">
+        </mat-form-field>
+
+    <button type="button" mat-button color="secondary" (click)="createProduct()">Create Product</button>
+</form>

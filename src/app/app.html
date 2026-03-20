@@ -1,15 +1,15 @@
 
-<mat-drawer-container class="example-container mat-tertiary" autosize>
+<mat-drawer-container class="example-container" autosize>
   
   <mat-drawer #drawer class="example-sidenav" mode="side">
-  
-    <app-sidenav></app-sidenav>
+    
+    <app-sidenav [drawer]="drawer"></app-sidenav>
   
   </mat-drawer>
   
   <app-navbar [drawer]="drawer"></app-navbar>
 
+  <router-outlet />
 </mat-drawer-container>
 
 
-<router-outlet />
