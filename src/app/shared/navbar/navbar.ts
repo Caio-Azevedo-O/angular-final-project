@@ -17,6 +17,7 @@ import { Router } from '@angular/router';
 export class Navbar {
   @Input() drawer!: MatDrawer;
   
+  euEstouAqui!: string;
   isLogged!: boolean;
   /**
    *
